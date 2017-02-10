@@ -17,11 +17,10 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.http import HttpResponse
 
-def page(request):
-    return HttpResponse(str("hello"))
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^test$', page),
+
 
 ]
