@@ -39,8 +39,21 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'application',
-    'blog'
+
+
+
+    'django.contrib.sites',
+
+
+    # Uncomment the next line to enable the admin:
+
+    # Uncomment the next line to enable admin documentation:
+    # 'django.contrib.admindocs',
+
+    'TS.application',
+    'TS.blog',
+
+
 ]
 
 MIDDLEWARE = [

@@ -17,11 +17,12 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.conf import settings # Подключаем settings.py
 from django.conf.urls.static import static #Тут мы подключаем статику
-from django.conf.urls import url, include, i18n # Пока не в курсе что тут Подключаем но как нибудь узнаю )
+from django.conf.urls import url, include, i18n # Пока не в курсе что тут Подключаем, но как нибудь узнаю )
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^i18n/', include('django.conf.urls.i18n')),
+    url(r'^$')
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
