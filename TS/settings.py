@@ -51,7 +51,7 @@ INSTALLED_APPS = [
     # 'django.contrib.admindocs',
 
     'TS.application',
-    'TS.blog',
+    'TS.blog'
 
 
 ]
