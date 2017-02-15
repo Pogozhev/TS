@@ -20,9 +20,16 @@ from django.conf.urls.static import static #Тут мы подключаем с�
 from django.conf.urls import url, include, i18n # Пока не в курсе что тут Подключаем, но как нибудь узнаю )
 
 
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^i18n/', include('django.conf.urls.i18n')),
-    url(r'^$')
+    url(r'',include('blog.urls'))
+
+    # Examples:
+    # url(r'^$', 'mysite.views.home', name='home'),
+    # url(r'^blog/', include('blog.urls')),
+
+
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
